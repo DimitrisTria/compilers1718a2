@@ -145,7 +145,7 @@ class MyParser():
             return
 
 p = MyParser()
-fp = open("test.txt", "r")
+fp = open("input.txt", "r")
 try:
     p.parse(fp)
 except ParseError as perr:
