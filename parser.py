@@ -144,10 +144,10 @@ class MyParser():
         else:
             return
 
-p = MyParser()
+parser = MyParser()
 fp = open("input.txt", "r")
 try:
-    p.parse(fp)
+    parser.parse(fp)
 except ParseError as perr:
     print(str(perr))
 fp.close()
