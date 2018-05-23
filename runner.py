@@ -198,3 +198,11 @@ class MyParser():
             return "True"
         else:
             return "False"
+
+parser = MyParser()
+fp = open("input.txt", "r")
+try:
+    parser.parse(fp)
+except ParseError as perr:
+    print(str(perr))
+fp.close()
