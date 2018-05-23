@@ -143,3 +143,11 @@ class MyParser():
             self.match("not")
         else:
             return
+
+p = MyParser()
+fp = open("test.txt", "r")
+try:
+    p.parse(fp)
+except ParseError as perr:
+    print(str(perr))
+fp.close()
